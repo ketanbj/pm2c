@@ -1,0 +1,1 @@
+precompile(Tuple{typeof(PowerModelsCompiled.load_grid), Cint})
