@@ -11,5 +11,5 @@ PackageCompiler.create_library(".", target_dir;
                                 incremental=false,
                                 filter_stdlibs=true,
                                 force=true, # Overwrite target_dir.
-                                header_files = ["$(@__DIR__)/powermodelscompiled.h"],
+                                header_files = ["$(@__DIR__)/libpowermodelscompiled.h"],
                             )

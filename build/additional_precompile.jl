@@ -1,1 +1,1 @@
-precompile(Tuple{typeof(PowerModelsCompiled.load_grid), Cint})
+precompile(Tuple{typeof(PowerModelsCompiled.increment64), Clong})

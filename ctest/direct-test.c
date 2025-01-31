@@ -1,7 +1,7 @@
 #include <stdio.h>
 
 #include "julia_init.h"
-#include "powermodelscompiled.h"
+#include "libpowermodelscompiled.h"
 
 int main(int argc, char *argv[])
 {
