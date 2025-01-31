@@ -3,7 +3,8 @@ Repository for PowerModels.jl based backend for Grid2Op
 
 # current status
 - dynamic library is generated
-- dynamic library does not seem to contain the symbols 
+- dynamic library contains the symbols
+- Testing dlopen / dlsym - ongoing 
 
 # organization
 - Makefile includes all the steps to compile the PoweModelsCompiled.jl wrappers 
