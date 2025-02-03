@@ -47,7 +47,7 @@ You can run the test with the following steps:
     - On Mac:
     ```export DYLD_FALLBACK_LIBRARY_PATH=<path-to>/julia/lib:<path-to>/julia/lib/julia:<path-to>/pm2c/PowerModelsCompiled/lib:$DYLD_FALLBACK_LIBRARY_PATH```
     - On Linux:
-    ```export LD_LIBRARY_PATH=<path-to>/julia/lib/:<path-to>/julia/lib/julia:<path-to>/pm2c/PowerModelsCompiled/lib:$LD_LIBRARY_PATH
+    ```export LD_LIBRARY_PATH=<path-to>/julia/lib/:<path-to>/julia/lib/julia:<path-to>/pm2c/PowerModelsCompiled/lib:$LD_LIBRARY_PATH```
 
 2. Go to ctest directory:
    ```cd ctest```
