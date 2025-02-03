@@ -1,15 +1,18 @@
 #include <stdio.h>
 #include <dlfcn.h>
+#include "julia_init.h"
+
 
 typedef int (*c_load_grid_t)(char*);
 typedef char* (*c_solve_power_flow_t)(char*);
 
-int main() {
+int main(int argc, char *argv[]) {
     void *handle;
     char *error;
+    init_julia(argc, argv);
 
     // Open the shared library
-    handle = dlopen("libpowermodelscompiled.dylib", RTLD_NOW);
+    handle = dlopen("libpowermodelscompiled.so", RTLD_LAZY);
     if (!handle) {
         fprintf(stderr, "%s\n", dlerror());
         return 1;
@@ -50,6 +53,7 @@ int main() {
 
     // Close the shared library
     dlclose(handle);
+    shutdown_julia(0);
 
     return 0;
 }
